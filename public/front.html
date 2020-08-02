@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB Site</title>
+        <link rel="stylesheet" herf="style.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            .hero{
+                width: 100%;
+                height: 610px;
+                background-image: url('https://images.wallpaperscraft.com/image/ice_frozen_shards_143277_1920x1080.jpg');
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .logo{
+                width: 200px;
+                height: 40px;
+                cursor: pointer;
+            }
+            .logo span{
+                text-decoration: none;
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 700;
+            }
+            .navbar{
+                width: 85%;
+                height: 15%;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            input{
+              color: #fbfcfd;
+              padding: 10px 25px;
+              background: transparent;
+              border: 1px solid #fff;
+              border-radius: 20px;
+              outline: none;
+              cursor: pointer;
+            }
+            .content{
+                color: black;
+                position: absolute;
+                top: 50%;
+                left: 8%;
+                transform: translateY(-50%);
+                z-index: 2;
+            }
+            .content small{
+                text-transform: none;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            h1{
+                font-size: 60px;
+            }
+            @media screen and (min-width: 360px){
+                .hero{
+                    height: 800px;
+                    background-image: url('https://images.wallpaperscraft.com/image/ice_frozen_shards_143277_1920x1080.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .content small{
+                text-transform: none;
+                font-size: 40px;
+                font-weight: bold;
+                }
+                h1{
+                    font-size: 80px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="navbar">
+                <div class="logo">
+                    <span style="color:Black">Z</span>   
+                    <span style="color:white">i</span>
+                    <span style="color:black">b</span>
+                    <span style="color:white">r</span>
+                    <span style="color:black">a</span>
+                    <span style="color:white">l</span>
+                    <span style="color:black">i</span>
+                    <span style="color:white">n</span>
+                    <span style="color:black">k</span>
+
+                  </div>
+                    <form action="/regform" method="GET">
+                        <input type="submit" style="color: Black;" value="Sign Up">
+                    </form> 
+                    <form action="/login" mrthod="GET">
+                        <input type="submit" style="color: Black;" value="Login">
+                    </form>
+            </div>
+            <div class="content">
+                <small>Welcome To Zibralink</small><br>
+                <h1>Create your responsive website</h1>
+                <form action="/home" method="GET">
+                   <input type="submit" style="color: Black; font-size: 20px;" value="Explore our site">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
