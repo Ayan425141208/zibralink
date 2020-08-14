@@ -11,12 +11,15 @@ app.get('/infozibralink', (req,res) =>{
 })
 
 app.get('/regform', (req,res)=>{
-    res.sendFile(path.join(__dirname, 'App.html'))
-})
-app.get('/login', (req,res)=>{
-    res.sendFile(path.join(__dirname, 'public', 'Form.html'))
+    res.sendFile(path.join(__dirname, 'App.html'));
 })
 
+app.get('/login', (req,res)=>{
+    res.sendFile(path.join(__dirname, 'public', 'Form.html'));
+})
+app.get('/projectinfo', (req,res)=>{
+    res.sendFile(path.join(__dirname, 'picture', 'project.html'));
+})
 app.get('/contact', (req,res) =>{
     res.sendFile(path.join(__dirname, 'public','contact.html'));
 })
