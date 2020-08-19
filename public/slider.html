@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" herf="css/style.css">
+        <link herf="https://fonts.googleapis.com/css?family=karla" rel="stylesheet">
+        <title>Slide image tutorial</title>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+                background-color: floralwhite;
+            }
+            
+            .slider-frame{
+                overflow: hidden;
+                height: 500px;
+                width: 1000px;
+                margin-left: 360px;
+                margin-top: 20px;
+                left: -10%;
+                top: 2%;
+                transform: translate(-10%, 2%);
+            }
+            @-webkit-keyframes slide_animation{
+                0%{left: 0px;}
+                10%{left: 0px;}
+                20%{left: 0px;}
+                30%{left: 0px;}
+                40%{left: 1000px;}
+                50%{left: 1000px;}
+                60%{left: 1000px;}
+                70%{left: 1000px;}
+                80%{left:  0px;}
+                90%{left:  0px;}
+                100%{left: 0px;}
+            
+            }
+            .slide-images{
+                width: 2000px;
+                height: 500px;
+                margin: 0 0 0 -1000px;
+                position: relative;
+                -webkit-animation-name: slide_animation;
+                -webkit-animation-duration: 15s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-play-state: running;
+            }
+            .img-container{
+                height: 500px;
+                width: 1000px;
+                position: relative;
+                float: left;
+                background-size: cover;
+                justify-content: center;
+            }
+            .content{
+                content: '';
+                position: absolute;
+                width: 50%;
+                height: 60%;
+                border-radius: 13%;
+                background-color: rgb(255, 0, 0);
+                left: 15%;
+                top: 15%;
+                transform: translate(15%, 15%);
+                box-shadow: 2px 5px 10px rgb(255, 15, 15);
+            }
+            .index{
+                content: '';
+                position: absolute;
+                width: 70%;
+                height: 60%;
+                border-radius: 5%;
+                background-color: rgb(0, 0, 0);
+                left: 10%;
+                top: 15%;
+                transform: translate(10%, 15%);
+                box-shadow: 2px 5px 10px gray;
+                text-align: center;
+                opacity: 0.7;
+            }
+            .index p{
+                color: white;
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .content h2{
+                font-size: 20px;
+                font-style: italic;
+                left: 70%;
+                top: 60%;
+                transform: translate(70%, 60%);
+            }
+            .content p{
+                color: whitesmoke;
+                font-size: 28px;
+                font-weight: 500;
+                font-family: 'Times New Roman', Times, serif;
+                left: 3%;
+                top: 200%;
+                transform: translate(3%, 200%);
+            }
+            .arrow-right {
+                width: 0; 
+                height: 0; 
+                border-top: 90px solid transparent;
+                border-bottom: 90px solid transparent;
+                border-left: 140px solid white;
+                left: 150%;
+                top: 35%;
+                transform: translate(150%, 35%);
+                text-align: center;
+                }
+               
+        </style>
+    </head>
+    <body>
+        <div class="slider-frame">
+            <div class="slide-images"> 
+                <div class="img-container">
+                    <img src="../picture/lap2.jpg">
+                    <div class="index">
+                        <p>Thanks for watching video<br>
+                           Like Share & Comment..
+                        </p>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="../picture/lap3.jpg">
+                    <div class="content">
+                        <div class="arrow-right"></div>
+                        <h2>zibralink</h2>
+                        <p>Subscribe our Channel & tab the bell icon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
